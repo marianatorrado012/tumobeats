@@ -41,7 +41,7 @@ button:active {
 }
 
 #title {
-   color: white;
+   color: rgb(255, 255, 255);
    margin: 0px;
    grid-area: title;
    font-size: 48px;
@@ -121,5 +121,5 @@ button:active {
 
 input[type="range"] {
     flex: 1;
-    opacity: 0;
+    opacity: 0.5;
 }

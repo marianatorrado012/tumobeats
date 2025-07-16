@@ -2,5 +2,13 @@
     {
         "title": " musica 1",
         "url": "audios/music01.mp3"
+    },
+    {
+        "title": " musica 2",
+        "url": "audios/music02.mp3"
+    },
+    {
+        "title": " musica 3",
+        "url": "audios/musica01.mp3"
     }
-]
+] 
