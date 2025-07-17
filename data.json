@@ -1,14 +1,78 @@
 [
     {
-        "title": " musica 1",
+        "title": " Enchanted",
         "url": "audios/music01.mp3"
     },
     {
-        "title": " musica 2",
+        "title": " I love you im sorry",
         "url": "audios/music02.mp3"
     },
     {
-        "title": " musica 3",
-        "url": "audios/musica01.mp3"
+        "title": "thats so true",
+        "url": "audios/music03.mp3"
+    },
+    {
+        "title": "Dont blame me",
+        "url": "audios/music04.mp3"
+    },
+    {
+        "title": "I Can Do With a Broken Heart",
+        "url": "audios/music05.mp3"
+    },
+    {
+        "title": "I Knew Your Trouble",
+        "url": "audios/music06.mp3"
+    },
+    {
+        "title": "Lover",
+        "url": "audios/music07.mp3"
+    },
+    {
+        "title": "Midnight rain",
+        "url": "audios/music08.mp3"
+    },
+    {
+        "title": "Our Song",
+        "url": "audios/music09.mp3"
+    },
+    {
+        "title": "You Belong Whit Me",
+        "url": "audios/music10.mp3"
+    },
+    {
+        "title": "music 11",
+        "url": "audios/music11.mp3"
+    },
+    {
+        "title": "music 12",
+        "url": "audios/music12.mp3"
+    },
+    {
+        "title": "music 13",
+        "url": "audios/music13.mp3"
+    },
+    {
+        "title": "music 14",
+        "url": "audios/music14.mp3"
+    },
+    {
+        "title": "set fire to the rain",
+        "url": "audios/music15.mp3"
+    },
+    {
+        "title": "Rolling in a deep",
+        "url": "audios/music16.mp3"
+    },
+    {
+        "title": "music 17",
+        "url": "audios/music17.mp3"
+    },
+    {
+        "title": "Risk",
+        "url": "audios/music18.mp3"
+    },
+    {
+        "title": "Someone Like You",
+        "url": "audios/music19.mp3"
     }
 ] 
