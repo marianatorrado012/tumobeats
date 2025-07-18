@@ -1,10 +1,10 @@
 window.onload= async function () {
 
 
-//carregar o service worker
-if("serviceWorker" in navigator) {
+      //carregar o service worker
+    if("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js");
-}
+ }
 
 
 
@@ -29,6 +29,7 @@ if("serviceWorker" in navigator) {
 
     let audio = document.querySelector("audio");
     let currentMusic = 0;
+    let pauseTime = 0;
 
 
 
@@ -52,7 +53,10 @@ if("serviceWorker" in navigator) {
 
         if(audio.paused) {
             playAudio();
+            audio.currentTime = pauseTime;
+            pauseTime = 0;
         } else {
+            pauseTime = audio.currentTime
             pauseAudio();
         }
     }
@@ -99,7 +103,6 @@ if("serviceWorker" in navigator) {
 
     function playAudio() {
     
-
         audio.src = audioData[currentMusic].url;
         changeTitle(audioData[currentMusic].title);
         audio.play()
@@ -112,19 +115,23 @@ if("serviceWorker" in navigator) {
         let playIcon = document.querySelector("#icon-play");
         let pauseIcon = document.querySelector("#icon-pause");
         playIcon.style.display = "none";
-        pauseIcon.style.display = "block";
+        pauseIcon.style.display = "initial";
        
     }
     audio.onpause = function(){
         let playIcon = document.querySelector("#icon-play");
         let pauseIcon = document.querySelector("#icon-pause");
-        playIcon.style.display = "block";
+        playIcon.style.display = "initial";
         pauseIcon.style.display = "none";
     }
     audio.ontimeupdate = function() {
         let bar = scrubInput.querySelector(".range-bar");
         let value = (audio.currentTime / audio.duration) * 100;
         updateInputBar(value, bar);
+    }
+
+    audio.onended = function() {
+        nextButton.click();
     }
 
     function scrubAudio(value) {
